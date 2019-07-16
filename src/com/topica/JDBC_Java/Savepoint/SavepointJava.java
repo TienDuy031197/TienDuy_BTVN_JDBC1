@@ -1,7 +1,7 @@
-package com.topica.JDBC.Savepoint;
+package com.topica.JDBC_Java.Savepoint;
 
-import com.topica.JDBC.Connect.Connect_DB;
-import com.topica.JDBC.Select.SelectDB;
+import com.topica.JDBC_Java.Connect.Connect_DB;
+import com.topica.JDBC_Java.Select.SelectDB;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;

@@ -1,7 +1,7 @@
-package com.topica.JDBC.Rollback;
+package com.topica.JDBC_Java.Rollback;
 
-import com.topica.JDBC.Connect.Connect_DB;
-import com.topica.JDBC.Select.SelectDB;
+import com.topica.JDBC_Java.Connect.Connect_DB;
+import com.topica.JDBC_Java.Select.SelectDB;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -29,6 +29,7 @@ public class RollbackJava {
                 callableStatement.execute();
 
                 connection.rollback();
+                connection.commit();
                 selectDB.exportData();
             } catch (SQLException e) {
                 e.printStackTrace();

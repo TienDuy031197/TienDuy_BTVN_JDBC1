@@ -1,4 +1,4 @@
-package com.topica.JDBC.Connect;
+package com.topica.JDBC_Java.Connect;
 
 public class Config {
     public static final String CLASS_NAME = "com.mysql.cj.jdbc.Driver";

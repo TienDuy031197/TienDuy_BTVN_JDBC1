@@ -4,5 +4,6 @@ BEGIN
 	DELETE FROM employees
 	WHERE id = _id;
 	ROLLBACK;
+    	COMMIT;
     	SELECT * FROM employees;
 END

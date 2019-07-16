@@ -9,5 +9,6 @@ BEGIN
     	DELETE FROM employees WHERE id = 6;
     
     	ROLLBACK TO VT2;
+    	COMMIT;
     	SELECT * FROM employees;
 END

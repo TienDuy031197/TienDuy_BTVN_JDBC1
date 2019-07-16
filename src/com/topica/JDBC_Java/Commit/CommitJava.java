@@ -1,14 +1,16 @@
-package com.topica.JDBC.Commit;
+package com.topica.JDBC_Java.Commit;
 
-import com.topica.JDBC.Connect.Connect_DB;
-import com.topica.JDBC.Select.SelectDB;
+import com.topica.JDBC_Java.Connect.Connect_DB;
+import com.topica.JDBC_Java.Select.SelectDB;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.SQLException;
 
 public class CommitJava {
-    private static final String STRING_SQL = "INSERT INTO employees VALUES(?,?,?,?);";
+    private static final String STRING_SQL = "UPDATE employees " +
+            "SET id=?, name=?, address=?, phone=?" +
+            "WHERE id=?;";
 
     SelectDB selectDB = null;
     Connection connection = null;
@@ -29,6 +31,7 @@ public class CommitJava {
                 callableStatement.setString(2, "Van");
                 callableStatement.setString(3, "Ha Noi");
                 callableStatement.setString(4, "3748713124");
+                callableStatement.setInt(5,3);
                 callableStatement.execute();
 
                 connection.commit();

@@ -1,4 +1,4 @@
-package com.topica.JDBC.Connect;
+package com.topica.JDBC_Java.Connect;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

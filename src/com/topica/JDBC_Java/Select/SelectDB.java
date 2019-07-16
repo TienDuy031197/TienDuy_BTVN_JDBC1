@@ -1,6 +1,6 @@
-package com.topica.JDBC.Select;
+package com.topica.JDBC_Java.Select;
 
-import com.topica.JDBC.Connect.Connect_DB;
+import com.topica.JDBC_Java.Connect.Connect_DB;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
